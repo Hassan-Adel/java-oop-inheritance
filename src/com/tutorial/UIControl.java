@@ -1,7 +1,11 @@
 package com.tutorial;
 
 public class UIControl {
+    //private cannot be accessed by child class
     private boolean isEnabled = true;
+
+    //no access modifiers means public in all classes in the SAME package (com.tutorial) but cannot be accessed by other packages
+    boolean fitsWindow = true;
 
     public UIControl(boolean isEnabled) {
         this.isEnabled = isEnabled;
