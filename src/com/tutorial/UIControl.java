@@ -9,7 +9,7 @@ public class UIControl {
 
     public UIControl(boolean isEnabled) {
         this.isEnabled = isEnabled;
-        System.out.println("UIControl");
+        //System.out.println("UIControl");
     }
 
     public boolean isEnabled() {
@@ -21,4 +21,5 @@ public class UIControl {
     public void disable(){
         isEnabled = false;
     }
+    public void render(){};
 }

@@ -4,13 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        var point1 = new Point(1,2);
-        var point2 = new Point(1,2);
-        System.out.println(point1.equals(point2));
-        System.out.println(point1 == point2);
-
-        System.out.println(point1.hashCode());
-        System.out.println(point2.hashCode());
+        UIControl[] controls = {new Textbox(),new CheckBox(), new Textbox()};
+        for (UIControl ctrl: controls) {
+            ctrl.render();
+        }
     }
     public static void show(UIControl uiControl){
         if(uiControl instanceof Textbox){

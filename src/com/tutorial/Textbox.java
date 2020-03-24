@@ -6,12 +6,17 @@ public class Textbox extends UIControl{
     public Textbox() {
         //must call parents constructor first
         super(true);
-        System.out.println("Textbox");
+        //System.out.println("Textbox");
     }
 
     @Override
     public String toString(){
         return text;
+    }
+
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
     }
 
     public Textbox setText(String text) {
