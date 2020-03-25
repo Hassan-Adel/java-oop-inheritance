@@ -1,8 +1,8 @@
 package com.tutorial;
 
-public class UIControl {
+public abstract class UIControl {
     //private cannot be accessed by child class
-    private boolean isEnabled = true;
+    private boolean isEnabled;
 
     //no access modifiers means public in all classes in the SAME package (com.tutorial) but cannot be accessed by other packages
     boolean fitsWindow = true;
@@ -21,5 +21,5 @@ public class UIControl {
     public void disable(){
         isEnabled = false;
     }
-    public void render(){};
+    public abstract void render();
 }
